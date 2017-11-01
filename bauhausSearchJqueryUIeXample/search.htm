@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>jQuery UI Autocomplete - Default functionality</title>
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <style>
@@ -27,8 +26,17 @@ table {
     overflow-x: hidden;
   }
   </style>
-  <script>
+ </head>
+<body>
+ 
+<form class="ui-widget">
+  <label for="tags">Tags: </label>
+  <input id="tags">
+</form>
+ 
+ <script>
   $( function() {
+
     var availableTags = [
       "afbrydere",
 "afbrydere-stikkontakter",
@@ -128,14 +136,6 @@ table {
     });
   } );
   </script>
-</head>
-<body>
- 
-<form class="ui-widget">
-  <label for="tags">Tags: </label>
-  <input id="tags">
-</form>
- 
  
 </body>
 </html>

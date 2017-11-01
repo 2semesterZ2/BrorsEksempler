@@ -7,7 +7,7 @@
 
 // variable  +  built-in function Date() and object Math
 
-var end = new Date('01/04/2018');
+var end = new Date('04/01/2018');
 var now = new Date();  
 // empty argument on Date function means today
 var distance = end - now;
@@ -40,14 +40,16 @@ function filip(){
 
 
 
-// for loop
-// var pictureBatch = document.getElementsByClassName("over");
 
-pictureBatch =  document.getElementById("all").childNodes;
-alert("all nodes " + pictureBatch.length);
-for (var i = 0; i < pictureBatch.length; i++ ) {
-	// console.log(pictureBatch[i].height);
-    pictureBatch[i].onclick =function()
+// all nodes will disappear on click
+
+// next 7 lines can be done with jQuery with one line:
+// 	  $('*').on('click',function(){this.remove()};)
+elementBatch =  document.getElementById("all").childNodes;
+// for loop
+for (var i = 0; i < elementBatch.length; i++ ) {
+	// console.log(elementBatch[i].height);
+    elementBatch[i].onclick =function()
     	{
 			this.style.display = 'none';  
 	    };
